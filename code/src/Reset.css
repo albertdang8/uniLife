@@ -1,0 +1,59 @@
+html {
+    font-size: 16px;
+}
+
+:root {
+    --clr-primary: #000000;
+    --clr-primary-2: #FFFFFF;
+    --clr-secondary: #CED3D8;
+    --clr-accent: #3A5295;
+    --clr-banner: #00A2E1;
+
+    --ff-base: 'Epilogue', sans-serif;
+    /*imported in index.html*/
+
+    --fw-regular: 400;
+    --fw-semi-bold: 500;
+    --fw-semi-bolder: 600;
+    --fw-bold: 700;
+
+    --fs-300: .875rem;
+    --fs-400: 1rem;
+    --fs-450: 1.25rem;
+    --fs-500: 1.5rem;
+    --fs-700: 2.5rem;
+    --fs-800: 4rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+img,
+svg,
+picture,
+video {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    color: var(--clr-primary);
+    font-family: var(--ff-base);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-regular);
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+input,
+textarea,
+button,
+select {
+    font: inherit;
+}
