@@ -4,7 +4,7 @@ html {
 
 :root {
     --clr-primary: #000000;
-    --clr-primary-2: #FFFFFF;
+    --clr-primary2: #FFFFFF;
     --clr-secondary: #CED3D8;
     --clr-accent: #3A5295;
     --clr-banner: #00A2E1;
@@ -21,6 +21,7 @@ html {
     --fs-400: 1rem;
     --fs-450: 1.25rem;
     --fs-500: 1.5rem;
+    --fs-600: 2.25rem
     --fs-700: 2.5rem;
     --fs-800: 4rem;
 }

@@ -1,2 +1,17 @@
+.row {
+    display: flex;
+    flex-direction: row;
+}
 
+.column {
+    display: flex;
+    flex-direction: column;
+}
 
+.j-center {
+    justify-content: center;
+}
+
+.a-center {
+    align-items: center;
+}
