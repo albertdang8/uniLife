@@ -1,4 +1,4 @@
-.nav-container{
+.nav-container {
     height: 60px;
     background-color: var(--clr-banner);
     color: var(--clr-primary2);
@@ -14,8 +14,8 @@
     margin-left: .75rem;
 }
 
-.logo > h1 {
-    font-size: var(--fs-500);   
+.logo>h1 {
+    font-size: var(--fs-500);
 }
 
 .smol {
@@ -29,6 +29,66 @@
 
 /*~modal*things~*/
 
+.modal-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--clr-primary2);
+    padding: 30px;
+    min-width: 50%;
+    max-width: 200px;
+    border-radius: 16px;
+}
+
 .modal-title {
-    font-size: var(--fs-600);
+    font-size: var(--fs-500);
+}
+
+.mail-icon {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    color: var(--clr-accent);
+}
+
+.words {
+    font-size: var(--fs-450);
+}
+
+.contact-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-form {
+    width: 45%
+}
+
+select {
+    height: 2rem;
+}
+
+.right-form {
+    width: 45%;
+}
+
+.input {
+    height: 2rem;
+    margin-top: 8px;
+    background-color: var(--clr-primary2);
+    border: 1px solid var(--clr-secondary);
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.form-section {
+    margin-bottom: 16px;
+}
+
+html {
+    background-color: aqua;
 }

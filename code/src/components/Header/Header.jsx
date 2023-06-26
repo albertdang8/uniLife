@@ -2,32 +2,19 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 import { AiOutlineHeart, AiOutlineMail } from "react-icons/ai";
 import { MdOutlineHolidayVillage, MdMailOutline } from "react-icons/md";
-// MdOutlineAddHome for booking Modal
-
 
 import "./Header.css";
 
 function Header() {
-  const [modalIsOpen, setIsOpen] = useState(false);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
   Modal.setAppElement(document.getElementById("root"));
 
-  const customStyles = {
-    content: {
-      top: "50%",
-      left: "50%",
-      right: "auto",
-      bottom: "auto",
-      marginRight: "-50%",
-      transform: "translate(-50%, -50%)"
-    },
-  };
-
   function openModal() {
-    setIsOpen(true);
+    setModalIsOpen(true);
   }
 
   function closeModal() {
-    setIsOpen(false);
+    setModalIsOpen(false);
   }
 
   return (
@@ -44,25 +31,67 @@ function Header() {
         </div>
         <div className="contact row a-center">
           <AiOutlineMail size={20} />
-          <button onClick={openModal} className="smol">Contact Us</button>
+          <button onClick={openModal} className="smol">
+            Contact Us
+          </button>
           <Modal
             isOpen={modalIsOpen}
             onRequestClose={closeModal}
-            style={customStyles}
-            contentLabel="Example Modal"
+            contentLabel="Contact Modal"
+            className="modal-container"
           >
-            <h2 className="modal-title">Contact Us</h2>
-            <MdMailOutline />
-            <div>
-            <h3>Feel free to contact us if you have any questions</h3>
-            <h3>Looking forward to hear from you.</h3>
+            <div className="row">
+              <h2 className="modal-title">Contact Us</h2>
+              <MdMailOutline size={30} className="mail-icon" />
             </div>
-            <form>
-              <input />
-              <button>tab navigation</button>
-              <button>stays</button>
-              <button>inside</button>
-              <button>the modal</button>
+            <div>
+              <h3 className="words">
+                Feel free to contact us if you have any questions.
+              </h3>
+              <h3 className="words">Looking forward to hearing from you.</h3>
+            </div>
+            <form className="contact-form">
+              <div className="left-form column">
+                <div className="column form-section">
+                  <label htmlFor="name">Name</label>
+                  <input className="input"type="text" placeholder="Enter your name" />
+                </div>
+                <div className="column form-section">
+                  <label htmlFor="phone">Phone Number</label>
+                  <input className="input" type="text" placeholder="Enter your Phone number" />
+                </div>
+                <div className="column form-section">
+                  <label htmlFor="status">Are you a...</label>
+                  <select type="text" className="employed">
+                    <option>Student</option>
+                    <option>Barbarian</option>
+                    <option>Druid</option>
+                    <option>Necromancer</option>
+                    <option>Rogue</option>
+                    <option>Sorcercor</option>
+                  </select>
+                </div>
+              </div>
+
+              <div className="right-form column">
+                <div className="column form-section">
+                  <label htmlFor="email">Email</label>
+                  <input className="input" type="text" placeholder="Enter your email address" />
+                </div>
+                <div className="column form-section">
+                  <label htmlFor="message">Message</label>
+                  <textarea
+                    type="text"
+                    placeholder="Enter your message"
+                  ></textarea>
+                </div>
+                <button
+                  className="submit-btn"
+                  onClick={() => setModalIsOpen(false)}
+                >
+                  Submit
+                </button>
+              </div>
             </form>
           </Modal>
         </div>
