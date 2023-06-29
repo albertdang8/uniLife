@@ -4,11 +4,12 @@ import Slider from "../../components/Slider/Slider";
 
 import "./HomePage.css";
 
-function HomePage() {
+function HomePage({ homeBanner }) {
+
   return (
     <div>
       <Header />
-      <Slider />
+      <Slider homeBanner={homeBanner}/>
       HomePage
     </div>
   );

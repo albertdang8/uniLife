@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import './Slider.css'
 
-function Slider() {
-    const [sliderText, setSliderText] = useState({ title: 'Find student homes with bills included', subTitle: 'A simple and faster way to search for student accommodation'});
+function Slider({ homeBanner }) {
 
-    const allCitiesText = { title: 'Student Accomodation'}
+const { title, subTitle } = homeBanner;
 
   return (
-    <div className='slider-container'>
-        
+    <div className='slider-container column a-center j-center'>
+        <h1 className='banner-title'>{title}</h1>
+        <h3 className='banner-subtitle'>{subTitle}</h3>
     </div>
   )
 }
