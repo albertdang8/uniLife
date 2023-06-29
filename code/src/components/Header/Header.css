@@ -27,6 +27,13 @@
     margin-left: 2.5rem;
 }
 
+.contact-btn {
+    background-color: transparent;
+    border: none;
+    color: var(--clr-primary2);
+    cursor: pointer;
+}
+
 /*~modal*things~*/
 
 .modal-container {
@@ -39,8 +46,7 @@
     transform: translate(-50%, -50%);
     background-color: var(--clr-primary2);
     padding: 30px;
-    min-width: 50%;
-    max-width: 200px;
+    width: fit-content;
     border-radius: 16px;
 }
 
@@ -87,8 +93,4 @@ select {
 
 .form-section {
     margin-bottom: 16px;
-}
-
-html {
-    background-color: aqua;
 }

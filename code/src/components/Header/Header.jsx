@@ -31,7 +31,7 @@ function Header() {
         </div>
         <div className="contact row a-center">
           <AiOutlineMail size={20} />
-          <button onClick={openModal} className="smol">
+          <button onClick={openModal} className="contact-btn smol">
             Contact Us
           </button>
           <Modal
