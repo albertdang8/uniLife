@@ -1,3 +1,9 @@
+.footer-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 .contact-info-container {
     background-color: var(--clr-banner);
     color: var(--clr-primary2);
@@ -46,7 +52,7 @@
     color: var(--clr-secondary);
     background-color: var(--clr-primary);
     font-size: var(--fs-400);
-    padding: 80px;
+    padding: 24px;
 }
 
 .ftr-anchor {
