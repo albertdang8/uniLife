@@ -3,6 +3,7 @@ import React from "react";
 import "./Reset.css";
 import "./App.css";
 import HomePage from "./pages/Homepage/HomePage";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const homeBanner = {
@@ -22,6 +23,7 @@ function App() {
   return (
     <>
       <HomePage homeBanner={homeBanner}/>
+      <Footer />
     </>
   );
 }

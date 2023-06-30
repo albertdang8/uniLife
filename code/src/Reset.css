@@ -5,7 +5,7 @@ html {
 :root {
     --clr-primary: #000000;
     --clr-primary2: #FFFFFF;
-    --clr-secondary: #CED3D8;
+    --clr-secondary: rgba(255, 255, 255, 0.60);
     --clr-accent: #3A5295;
     --clr-banner: #00A2E1;
 
