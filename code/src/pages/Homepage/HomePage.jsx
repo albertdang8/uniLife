@@ -1,7 +1,6 @@
 import React from "react";
 import { TbWorldSearch } from "react-icons/tb";
 import { MdChecklistRtl, MdOutlineReceiptLong, MdOutlineRealEstateAgent } from "react-icons/md";
-import { GiTreehouse } from "react-icons/gi";
 import { AiOutlineHeart } from "react-icons/ai";
 
 import Header from "../../components/Header/Header";
@@ -37,7 +36,7 @@ function HomePage({ homeBanner }) {
           </div>
         </div>
       </div>
-      <div className="quality-container column">
+      <div className="quality-container row">
         <div className="quality-left">
           <div className="feature-item row">
             <MdOutlineRealEstateAgent size={64} className="feature-icon" />
@@ -54,7 +53,6 @@ function HomePage({ homeBanner }) {
             <AiOutlineHeart size={64} className="feature-icon" />
             <div className="column">
               <h4 className="section-title">Your favorite</h4>
-
               <p>
                 Shortlist your favourite properties and send enquiries with one
                 click.
