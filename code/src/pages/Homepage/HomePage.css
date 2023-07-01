@@ -1,0 +1,37 @@
+.bottom-container {
+    margin: 80px;
+}
+
+.feature-title {
+    font-size: var(--fs-600);
+    font-weight: var(--fw-semi-bold);
+    text-align: center;
+}
+
+.features {
+    justify-content: space-evenly;
+}
+
+.feature-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.feature-icon {
+    color: var(--clr-accent);
+}
+
+.section-title {
+    font-size: calc(1.5rem + 4px);
+    /* just to get 28px */
+    margin-bottom: 12px;
+}
+
+.section-title+p {
+    color: #383838;
+    font-size: var(--fs-450);
+}
+
+.quality-left {
+    width: 45%;
+}

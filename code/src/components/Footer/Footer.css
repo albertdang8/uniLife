@@ -1,6 +1,7 @@
 .footer-container {
-    position: absolute;
+    position: relative;
     bottom: 0;
+    left: 0;
     width: 100%;
 }
 
@@ -15,7 +16,7 @@
 
 .contact-info-left {
     width: 50%;
-    padding: 120px;
+    padding: 80px;
 }
 
 .contact-text {
@@ -33,7 +34,8 @@
 
 .contact-info-right {
     width: 50%;
-    padding: 120px;
+    padding: 80px;
+    align-items: flex-start;
 }
 
 .icon-item {
@@ -48,7 +50,7 @@
 
 .btm-foot-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     color: var(--clr-secondary);
     background-color: var(--clr-primary);
     font-size: var(--fs-400);

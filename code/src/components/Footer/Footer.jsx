@@ -13,7 +13,7 @@ function Footer() {
   return (
     <div className="footer-container">
       <div className="contact-info-container row">
-        <div className="contact-info-left column">
+        <div className="contact-info-left column j-center a-center">
           <h3 className="footer-title">Keep in touch</h3>
           <p className="contact-text">
             Curious about new offereings? Sign up for our weekly newsletter and
@@ -25,7 +25,7 @@ function Footer() {
             placeholder="Your email"
           />
         </div>
-        <div className="contact-info-right column">
+        <div className="contact-info-right column j-center a-center">
           <h3 className="footer-title">Let's Socialize</h3>
           <div className="icon-item ">
             <BiLogoFacebookCircle size={32} className="space"/>
