@@ -2,6 +2,7 @@ import React from "react";
 import { TbWorldSearch } from "react-icons/tb";
 import { MdChecklistRtl, MdOutlineReceiptLong, MdOutlineRealEstateAgent } from "react-icons/md";
 import { AiOutlineHeart } from "react-icons/ai";
+import phoneGuy from '../../assets/Images/phoneGuy.png';
 
 import Header from "../../components/Header/Header";
 import Slider from "../../components/Slider/Slider";
@@ -37,9 +38,9 @@ function HomePage({ homeBanner }) {
         </div>
       </div>
       <div className="quality-container row">
-        <div className="quality-left">
-          <div className="feature-item row">
-            <MdOutlineRealEstateAgent size={64} className="feature-icon" />
+        <div className="quality-left column j-center a-center">
+          <div className="feature-item ">
+            <MdOutlineRealEstateAgent size={68} className="feature-icon quality-icon" />
             <div className="column">
               <h4 className="section-title">Best Selection</h4>
 
@@ -50,7 +51,7 @@ function HomePage({ homeBanner }) {
             </div>
           </div>
           <div className="feature-item row">
-            <AiOutlineHeart size={64} className="feature-icon" />
+            <AiOutlineHeart size={64} className="feature-icon quality-icon" />
             <div className="column">
               <h4 className="section-title">Your favorite</h4>
               <p>
@@ -59,9 +60,10 @@ function HomePage({ homeBanner }) {
               </p>
             </div>
           </div>
+              <button className="compare-btn">Search & Compare</button>
         </div>
-        <div className="quality-right">
-
+        <div className="quality-right row j-center">
+          <img src={phoneGuy} alt="Phone Guy" className="phone-guy"/>
         </div>
       </div>
     </div>
