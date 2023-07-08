@@ -68,7 +68,7 @@ function Header() {
                     <option>Druid</option>
                     <option>Necromancer</option>
                     <option>Rogue</option>
-                    <option>Sorcercor</option>
+                    <option>Sorceror</option>
                   </select>
                 </div>
               </div>
